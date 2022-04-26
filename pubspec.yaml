@@ -1,0 +1,25 @@
+name: card_scanner
+description: Credit card scanner for Flutter.
+version: 0.3.1
+
+environment:
+  sdk: ">=2.14.4 <3.0.0"
+  flutter: ">=2.5.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+ plugin:
+    platforms:
+      android:
+        package: com.nateshmbhat.card_scanner
+        pluginClass: CardScannerPlugin
+      ios:
+        pluginClass: CardScannerPlugin
