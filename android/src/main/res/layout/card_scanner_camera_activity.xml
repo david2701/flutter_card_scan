@@ -58,7 +58,6 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal"
-            android:background="@color/semitransparent"
             >
             <View
                 android:id="@+id/left"
