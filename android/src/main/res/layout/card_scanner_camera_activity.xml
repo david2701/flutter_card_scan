@@ -61,6 +61,12 @@
             android:orientation="horizontal"
             android:background="@color/semitransparent"
             >
+            <View
+                android:id="@+id/left"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/semitransparent" />
+
 
 
             <LinearLayout
@@ -74,6 +80,12 @@
                 android:background="@drawable/ic_scan_border"
                 android:minHeight="800dp"
                 android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/scannerBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_anim_rectangle" />
 
             </LinearLayout>
 
