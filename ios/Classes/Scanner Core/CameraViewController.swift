@@ -198,7 +198,6 @@ class CameraViewController: UIViewController {
     func addNavigationBar() {
         DispatchQueue.main.async {
             self.view.addSubview(self.backButton)
-            self.view.background(UIColor.white.cgColor)
             self.view.addSubview(self.cardImage)
         }
     }
@@ -302,6 +301,7 @@ class CameraViewController: UIViewController {
             UIImage(
                 named: "cardImage"
             ),
+            for: .normal
         )
         
         
