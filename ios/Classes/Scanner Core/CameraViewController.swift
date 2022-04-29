@@ -189,7 +189,7 @@ class CameraViewController: UIViewController {
             scanYourCardToProceedLabel.text = "Placez votre carte de crédit au centre de la zone"
             scanYourCardToProceedLabel.numberOfLines = 0
             scanYourCardToProceedLabel.font = scanYourCardToProceedLabel.font.withSize(16.0)
-            scanYourCardToProceedLabel.textColor = .foregroundColor(.white)
+            scanYourCardToProceedLabel.textColor = UIColor.white
             self.view.addSubview(scanYourCardToProceedLabel)
         }
     }
