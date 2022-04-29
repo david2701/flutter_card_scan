@@ -200,6 +200,7 @@ class CameraViewController: UIViewController {
             self.view.addSubview(self.backButton)
             self.view.backgroundColor = UIColor.white
             self.view.addSubview(self.cardImage)
+            self.view.addSubview(self.whiteBar)
         }
     }
     
