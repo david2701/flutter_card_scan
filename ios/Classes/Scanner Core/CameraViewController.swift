@@ -186,10 +186,10 @@ class CameraViewController: UIViewController {
             )
             
             scanYourCardToProceedLabel.textAlignment = NSTextAlignment.center
-            scanYourCardToProceedLabel.text = self.prompt
+            scanYourCardToProceedLabel.text = "Placez votre carte de crédit au centre de la zone"
             scanYourCardToProceedLabel.numberOfLines = 0
-            scanYourCardToProceedLabel.font = scanYourCardToProceedLabel.font.withSize(12.0)
-            scanYourCardToProceedLabel.textColor = .white
+            scanYourCardToProceedLabel.font = scanYourCardToProceedLabel.font.withSize(16.0)
+            scanYourCardToProceedLabel.textColor = Color.black
             self.view.addSubview(scanYourCardToProceedLabel)
         }
     }
@@ -198,7 +198,8 @@ class CameraViewController: UIViewController {
     func addNavigationBar() {
         DispatchQueue.main.async {
             self.view.addSubview(self.backButton)
-            self.view.addSubview(self.flashButton)
+            self.view.background = Color.white
+            self.view.addSubview(self.cardImage)
         }
     }
     
@@ -235,6 +236,8 @@ class CameraViewController: UIViewController {
         
         return flashBtn
     }()
+
+
     
     lazy var backButton: UIButton = {
         let backBtn = UIButton(
@@ -282,6 +285,37 @@ class CameraViewController: UIViewController {
             )
         }
     }
+
+    //Card Icon
+        
+    lazy var cardImage: UIButton = {
+        let cardImg = UIButton(
+            frame: CGRect(
+                x: self.view.frame.halfWidth,
+                y: self.view.frame.halfHeight + self.view.frame.halfHeight / 2,
+                width: 17 + 30,
+                height: 17 + 10
+            )
+        )
+        
+        cardImg.setImage(
+            UIImage(
+                named: "cardImage"
+            ),
+            for: .normal
+        )
+        
+        
+        cardImg.contentEdgeInsets = UIEdgeInsets(
+            top: 0.0,
+            left: 0.0,
+            bottom: 10.0,
+            right: 30.0
+        )
+        
+        return cardImg
+    }()
+    
     
     @objc func selectorBackButton() {
         DispatchQueue.main.async {
