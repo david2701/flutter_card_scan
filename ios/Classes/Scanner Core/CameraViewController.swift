@@ -154,9 +154,10 @@ class CameraViewController: UIViewController {
     }
     
     func addScanControlsAndIndicators() {
+        whiteBar()
         addCornerClips()
         addScanYourCardToProceedLabel()
-        addNavigationBar().background(UIColor.white)
+        addNavigationBar()
     }
     
     func addCornerClips() {
