@@ -291,8 +291,8 @@ class CameraViewController: UIViewController {
     lazy var cardImage: UIButton = {
         let cardImg = UIButton(
             frame: CGRect(
-                x: self.view.frame.halfWidth,
-                y: self.view.frame.halfHeight + self.view.frame.halfHeight / 2,
+                x: self.view.frame.width / 2,
+                y: self.view.frame.height / 2 + self.view.frame.,
                 width: 17 + 30,
                 height: 17 + 10
             )
