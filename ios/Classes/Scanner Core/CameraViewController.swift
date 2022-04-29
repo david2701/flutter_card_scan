@@ -203,7 +203,7 @@ class CameraViewController: UIViewController {
         }
     }
     
-    lazy var flashButton: UIButton = {
+      lazy var flashButton: UIButton = {
         let device = AVCaptureDevice.default(for: AVMediaType.video)!
         let flashBtn = UIButton(
             frame: CGRect(
@@ -211,6 +211,17 @@ class CameraViewController: UIViewController {
                 y: 55,
                 width: 17 + 30,
                 height: 17 + 10
+            )
+        )
+    }  
+
+    lazy var whiteBar: UIView = {
+        let whiteB = UIButton(
+            frame: CGRect(
+                x: 0,
+                y: 0,
+                width: self.view.frame.width,
+                height: 17 + 17
             )
         )
         
