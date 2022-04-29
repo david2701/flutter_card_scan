@@ -189,7 +189,7 @@ class CameraViewController: UIViewController {
             scanYourCardToProceedLabel.text = "Placez votre carte de crédit au centre de la zone"
             scanYourCardToProceedLabel.numberOfLines = 0
             scanYourCardToProceedLabel.font = scanYourCardToProceedLabel.font.withSize(16.0)
-            scanYourCardToProceedLabel.textColor = UIColor.white
+            scanYourCardToProceedLabel.textColor = UIColor.black
             self.view.addSubview(scanYourCardToProceedLabel)
         }
     }
@@ -198,6 +198,7 @@ class CameraViewController: UIViewController {
     func addNavigationBar() {
         DispatchQueue.main.async {
             self.view.addSubview(self.backButton)
+            self.view.background(UIColor.white)
             self.view.addSubview(self.cardImage)
         }
     }
@@ -291,7 +292,7 @@ class CameraViewController: UIViewController {
         let cardImg = UIButton(
             frame: CGRect(
                 x: self.view.frame.width / 2,
-                y: self.view.frame.height / 2 + self.view.frame.height / 4,
+                y: self.view.frame.height / 2 + self.view.frame.height / 6,
                 width: 17 + 30,
                 height: 17 + 10
             )
