@@ -156,7 +156,7 @@ class CameraViewController: UIViewController {
     func addScanControlsAndIndicators() {
         addCornerClips()
         addScanYourCardToProceedLabel()
-        addNavigationBar()
+        addNavigationBar().background(UIColor.white)
     }
     
     func addCornerClips() {
@@ -200,7 +200,6 @@ class CameraViewController: UIViewController {
             self.view.addSubview(self.backButton)
             self.view.backgroundColor = UIColor.white
             self.view.addSubview(self.cardImage)
-            self.view.addSubview(self.whiteBar)
         }
     }
     
